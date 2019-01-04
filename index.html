@@ -27,7 +27,7 @@
     <p>Sulfur Code (include metadata):</p>
     <textarea id="sfrcodeinput" style="width: 100%; height: 300px; resize: vertical; font-size: 20px;"></textarea>
     <p>You may want to see the <a href="https://abaer.xyz/sfrex">Examples</a></p>
-    <button id="loadBtn" onclick="sulfur.setupProject(sfrcodeinput.value); runBtn.disabled = false;">Load</button>
+    <button id="loadBtn" onclick="log.innerHTML = ''; sulfur.setupProject(sfrcodeinput.value); runBtn.disabled = false;">Load</button>
     <button id="runBtn" onclick="log.innerHTML = ''; sulfur.run();" disabled>Run</button>
     <div id="log"></div>
   </body>
